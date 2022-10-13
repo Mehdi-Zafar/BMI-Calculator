@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/fbd1f415ae.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="heading">
+        <h1>
+          <i class="fa-solid fa-dumbbell"></i> BMI Calculator
+          <i class="fa-solid fa-person-walking"></i>
+        </h1>
+      </div>
+      <div class="radiobtns">
+        <input type="radio" name="unit" id="standard" checked />
+        <label for="standard">Standard</label>
+        <input type="radio" name="unit" id="metric" />
+        <label for="metric">Metric</label>
+      </div>
+      <form>
+        <div class="standard">
+          <div class="input-group">
+            <label for="height-inch">Height (in inches):</label><br />
+            <input
+              type="number"
+              id="height-inch"
+              placeholder="Enter height"
+            /><br /><br />
+            <label for="weight-lbs">Weight (in lbs):</label><br />
+            <input type="number" id="weight-lbs" placeholder="Enter weight" />
+          </div>
+          <div>
+            <button type="submit">Calculate</button>
+          </div>
+        </div>
+        <div class="metric hidden">
+          <div class="input-group">
+            <label for="height-cm">Height (in cm):</label><br />
+            <input
+              type="number"
+              id="height-cm"
+              placeholder="Enter height"
+            /><br /><br />
+            <label for="weight-kg">Weight (in kg):</label><br />
+            <input type="number" id="weight-kg" placeholder="Enter weight" />
+          </div>
+          <div>
+            <button type="submit">Calculate</button>
+          </div>
+        </div>
+      </form>
+      <div class="result">
+        <h1 class="bmi-value"></h1>
+        <h3 class="bmi-category"></h3>
+      </div>
+    </div>
+  </body>
+</html>
